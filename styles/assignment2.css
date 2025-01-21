@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .text-orange{
+    color: rgba(254, 163, 1, 1);
+  }
+
+  .text-skyblue{
+    color: rgba(1, 172, 253, 1);
+  }
+
+  .text-blue{
+    color: rgba(5, 212, 223, 1);
+  }
+
+  .text-purple{
+    color: rgba(93, 88, 239, 1);
+  }
+
+ 
+
+  /*nav styles*/
+
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .logo img{
+    max-width: 62px;
+    max-height: 62px;
+  }
+
+  .title{
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .navbar, .banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+
+  .nav-link{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .nav-links{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+  }
+
+  .primary-btn{
+    background-color: orange;
+    color: white;
+    border-radius: 12px;
+    max-width: 197px;
+    max-height: 50px;
+    padding: 10px 60.5px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+/*banner styles*/
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.banner-description{
+    font-size: 1.25rem;
+    margin-top: 24px;
+    margin-right: 50px;
+}
+
+.banner-btn{
+    margin-top: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    padding: 10px 47px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+/*curriculum*/
+.curriculum{
+    background-image: url('elementary.png');
+    width: 100%;
+    height: auto;
+}
+.curriculum-heading{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.curriculum-container{
+    max-width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    gap: 28.29px;
+    grid-template-columns:repeat(3, 1fr);
+    justify-items: center;
+}
+
+.curriculum-card{
+    display: flex;
+    width: 368px;
+    height:477px;
+    border-radius:  19px; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#bg1{
+    background-image: linear-gradient(to bottom, rgba(222, 245, 255, 1) 0%, rgba(255, 255, 255, 0) 40%);
+
+}
+
+#bg2{
+    background-image: linear-gradient(to bottom, rgba(255, 244, 220, 1) 0%, rgba(255, 255, 255, 0) 40%);
+
+}   
+
+#bg3{
+    background-image: linear-gradient(to bottom, rgba(242, 232, 255, 1) 0%, rgba(255,0,0,0) 40%);
+}
+
+
+.curriculum-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 33px;
+}
+
+.curriculum-description{
+    font-weight: 500;
+    font-size: 0.94rem;
+    padding-left: 41px;
+    padding-right: 41px;
+    margin-bottom: 34px;
+}
+
+.more{
+    text-decoration:none ;
+    font-size: 1rem;
+    font-weight: 700;
+}
