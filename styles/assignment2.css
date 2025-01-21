@@ -24,6 +24,15 @@
     color: rgba(93, 88, 239, 1);
   }
 
+  .btn-color-1{
+    background-color: rgba(60, 216, 232, 1);
+  }
+  .btn-color-2{
+    background-color: rgba(149, 178, 38, 1);
+  }
+  .btn-color-3{
+    background-color: rgba(93, 88, 240, 1);
+  }
  
 
   /*nav styles*/
@@ -45,6 +54,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
     max-width: 1160px;
     margin: 0 auto;
   }
@@ -157,7 +167,7 @@
     font-weight: 700;
 }
 
-.arrow-button{
+.arrow{
   background-color: orange;
   border-radius: 30px;
   color: white;
@@ -172,4 +182,152 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+/*stories*/
+
+.story-btn{
+  color: white;
+  font-size: .7rem;
+  border-radius: 47.93px;
+  border: none;
+  padding: 8px 19px;
+  font-weight: 100;
+   /* set button to an absolute position */
+  /* set a higher z-index than the image */
+}
+.title{
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+.story-container{
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 540px repeat(2, 290px);
+  grid-template-rows: repeat(2, 301.61px);
+  gap: 19.17px;
+  position: relative;
+}
+
+.a{
+  grid-row: span 2;
+}
+
+.a,.b,.c,.d,.e{
+  border-radius: 16px;
+  background-color:antiquewhite;
+}
+
+.story-container img{
+  border-top-left-radius: 16px ;
+  border-top-right-radius: 16px;
+  width: 100%;
+  border: none;
+
+}
+
+.story-container h4 {
+  padding-left: 38.5px;
+  padding-right: 38.5px;
+}
+
+.story-container .a p {
+  padding-left: 38.04px;
+  padding-right: 68px;
+  
+}
+
+.view-button{
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 10px 61px;
+  border-radius: 12px;
+  border: none;
+}
+
+.view{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+/**footer**/
+
+footer{
+  background-color: rgba(1, 172, 253, 1);
+  color: white;
+}
+
+.foot{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1160px;
+  align-items: flex-start;
+  padding-top: 123px;
+  padding-bottom: 170px;
+}
+
+/*kids education*/
+
+.edu-content{
+  display: flex;
+
+}
+
+.edu-description{
+  width: 399px;
+}
+
+.edu-img{
+  width: 70.34px;
+  height: 81.65px;
+}
+
+.edu-title{
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+/*about school*/
+.about h4{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.about-content{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-content li{
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+
+/*Keep in touch*/
+
+.contact h4{
+  font-size: 1.63rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.contact-content{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10.15px;
 }
