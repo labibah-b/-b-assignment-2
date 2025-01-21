@@ -97,11 +97,6 @@
 }
 
 /*curriculum*/
-.curriculum{
-    background-image: url('elementary.png');
-    width: 100%;
-    height: auto;
-}
 .curriculum-heading{
     text-align: center;
     font-weight: 700;
@@ -160,4 +155,21 @@
     text-decoration:none ;
     font-size: 1rem;
     font-weight: 700;
+}
+
+.arrow-button{
+  background-color: orange;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  border: none;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+}
+
+.round-btn{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
