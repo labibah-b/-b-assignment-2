@@ -35,11 +35,13 @@
   }
  
 
+
   /*nav styles*/
 
   .logo{
     display: flex;
     align-items: center;
+    gap: 11px;
   }
   .logo img{
     max-width: 62px;
@@ -49,12 +51,13 @@
   .title{
     font-weight: 700;
     font-size: 2rem;
+   
   }
   .navbar, .banner{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
+    
     max-width: 1160px;
     margin: 0 auto;
   }
@@ -83,7 +86,18 @@
     font-weight: 600;
   }
 
+.round-btn, .view-button{
+    margin-top: 80px;
+  }
+
+.curriculum-heading, .story-title{
+  margin-bottom: 80px;
+}
+
+
 /*banner styles*/
+
+
 .banner-title{
     font-size: 3.5rem;
     font-weight: 700;
@@ -107,6 +121,12 @@
 }
 
 /*curriculum*/
+
+.curriculum{
+  background-image: url(../assets/bg.png);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .curriculum-heading{
     text-align: center;
     font-weight: 700;
@@ -186,6 +206,11 @@
 
 /*stories*/
 
+.stories{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(254, 163, 1, 0.3) 100%), url('../assets/bg.png');
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .story-btn{
   color: white;
   font-size: .7rem;
@@ -193,10 +218,9 @@
   border: none;
   padding: 8px 19px;
   font-weight: 100;
-   /* set button to an absolute position */
-  /* set a higher z-index than the image */
+ 
 }
-.title{
+.story-title{
   text-align: center;
   font-weight: 700;
   font-size: 2.8rem;
