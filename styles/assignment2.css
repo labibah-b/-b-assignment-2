@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 .quicksand-font{
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
@@ -72,7 +71,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     max-width: 1160px;
     margin: 0 auto;
   }
@@ -121,7 +119,7 @@
 .banner-description{
     font-size: 1.25rem;
     margin-top: 24px;
-    margin-right: 50px;
+    
 }
 
 .banner-btn{
@@ -133,6 +131,11 @@
     padding: 10px 47px;
     font-weight: 700;
     font-size: 1.25rem;
+}
+
+.banner-img{
+  padding-left: 50px;
+  max-width: 100%;
 }
 
 /*curriculum*/
@@ -218,6 +221,9 @@
   height: 60px;
   font-size: 2rem;
 }
+.arrow:hover{
+  background-color: lightsalmon;
+}
 
 .round-btn{
   display: flex;
@@ -252,8 +258,8 @@
   margin: 0 auto;
   display: grid;
   justify-items: center;
-  grid-template-columns: 540px repeat(2, 290px);
-  grid-template-rows: repeat(2, 301.61px);
+  grid-template-columns: 540px repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 19.17px;
   position: relative;
 }
@@ -377,37 +383,102 @@ footer{
   gap: 10.15px;
 }
 
+.ham-icon{
+  display: none;
+}
+
+
+
+.marquee {
+  width: 100%; 
+  
+  background-color: orange;
+}
+
+.marquee-container {
+  display: flex; /* Align items in a row */
+  animation: scroll 22s linear infinite;
+}
+
+.marquee-content {
+  white-space: nowrap;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 5px 0;
+  color: white;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
 
 @media screen and (max-width: 576px){
- .banner{
-  flex-direction: column;
-  margin: 0 auto;
-  text-align: center;
- } 
+  .logo h3, .nav-links, .primary-btn{
+    display: none;
+  }
 
- .banner-container{
-  order: 2;
- }
- .banner-img{
-  order: 1;
- }
+  .ham-icon{
+    display: block;
+    max-width: 30px;
+    max-height: 30px;
+  }
 
- .curriculum-container{
-  grid-template-columns:repeat(1, 1fr);
- }
+  .navbar{
+    padding-top: 6px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid orange;
+  }
 
 
- .a{
-  display: none;
- }
+  .banner{
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+   } 
 
- .story-container{
-  grid-template-columns: repeat(2, 1fr);
+   .banner-img{
+    order: 1;
+    padding-left: 0px;
+    max-width: 100%;
+    max-height: auto;
+   }
 
- }
+   .banner-container{
+    order: 2;
+   }
 
- .foot{
-  flex-direction: column;
-  margin-left: 21px;
- }
+   body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .curriculum-container{
+    grid-template-columns:repeat(1, 1fr);
+  }
+
+  .round-btn{
+    display: none;
+  }
+
+  .a{
+    display: none;
+   }
+  
+   .story-container{
+    grid-template-columns: repeat(2, 1fr);
+  
+   }
+
+   .foot{
+    flex-direction: column;
+    padding-left: 20px;
+   }
+  
+  
+  
 }
