@@ -477,16 +477,11 @@ footer{
   
    .story-container{
     grid-template-columns: repeat(2, 1fr);
-  
    }
 
    .foot{
     flex-direction: column;
     padding-left: 20px;
-   }
-
-   .story-container{
-    max-width: 90%;
    }
 
    .banner img{
