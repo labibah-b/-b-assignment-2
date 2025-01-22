@@ -375,6 +375,11 @@ footer{
   font-weight: 500;
 }
 
+.about-content a{
+  text-decoration: none;
+  color: white;
+}
+
 
 /*Keep in touch*/
 
